@@ -6,7 +6,6 @@ namespace JeuMaths
     class Program
     {
         static List<string> historique = new List<string>();
-        static int point = 0;
         static int niveauMax = 10;
         static Random random = new Random();
 
@@ -79,7 +78,7 @@ namespace JeuMaths
 
         static void Jouer(string operateur)
             {
-                int a, b, resultatAttendu = 0;
+                int a, b, resultatAttendu, point = 0;
                 string question = null;
 
                 if (operateur == "+")
