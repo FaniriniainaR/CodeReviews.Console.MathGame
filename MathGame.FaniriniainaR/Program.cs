@@ -6,7 +6,7 @@ namespace JeuMaths
     class Program
     {
         static List<string> historique = new List<string>();
-        static int score = 0;
+        static int point = 0;
         static int niveauMax = 10;
         static Random random = new Random();
 
@@ -121,7 +121,7 @@ namespace JeuMaths
                 if (int.TryParse(reponse, out int resultatInt) && resultatInt == resultatAttendu)
                 {
                     Console.WriteLine("Correct !");
-                    score++;
+                    point++;
                     historique.Add($"{question} Votre réponse: {reponse} | Correct | Temps: {tempsEcoule:F1}s");
                 }
                 else
